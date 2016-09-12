@@ -8,13 +8,35 @@
 
 /* Begin PBXBuildFile section */
 		A61371E61D7DBCBA00A956E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A61371E51D7DBCBA00A956E8 /* main.m */; };
-		A61371E91D7DBCBA00A956E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A61371E81D7DBCBA00A956E8 /* AppDelegate.m */; };
-		A61371EC1D7DBCBA00A956E8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A61371EB1D7DBCBA00A956E8 /* ViewController.m */; };
 		A61371EF1D7DBCBA00A956E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A61371ED1D7DBCBA00A956E8 /* Main.storyboard */; };
 		A61371F11D7DBCBA00A956E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A61371F01D7DBCBA00A956E8 /* Assets.xcassets */; };
 		A61371F41D7DBCBA00A956E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A61371F21D7DBCBA00A956E8 /* LaunchScreen.storyboard */; };
 		A61371FF1D7DBCBA00A956E8 /* valetuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A61371FE1D7DBCBA00A956E8 /* valetuTests.m */; };
 		A613720A1D7DBCBA00A956E8 /* valetuUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A61372091D7DBCBA00A956E8 /* valetuUITests.m */; };
+		A64799721D81E66D00A1D1A8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A647996A1D81E66D00A1D1A8 /* AppDelegate.m */; };
+		A64799731D81E66D00A1D1A8 /* UBSDKUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = A647996F1D81E66D00A1D1A8 /* UBSDKUtility.m */; };
+		A64799741D81E66D00A1D1A8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A64799711D81E66D00A1D1A8 /* ViewController.m */; };
+		A647997A1D81E72A00A1D1A8 /* UBSDKExampleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A64799781D81E72A00A1D1A8 /* UBSDKExampleTableViewCell.m */; };
+		A647997D1D81E7CE00A1D1A8 /* UBSDKLoginButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = A647997C1D81E7CE00A1D1A8 /* UBSDKLoginButtonView.m */; };
+		A64CF0DC1D82040700E465B4 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A64CF0DB1D82040700E465B4 /* SearchViewController.m */; };
+		A67235261D8231780014E844 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A67235251D8231780014E844 /* MapViewController.m */; };
+		A67235291D8265F80014E844 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A67235281D8265F80014E844 /* BaseViewController.m */; };
+		A678A5FC1D843B8E00895FB4 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A678A5FB1D843B8E00895FB4 /* ProfileViewController.m */; };
+		A6FD77131D845E6700D892A7 /* storehouse.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6FD77121D845E6700D892A7 /* storehouse.plist */; };
+		A6FD77151D84731F00D892A7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6FD77141D84731F00D892A7 /* Images.xcassets */; };
+		A6FF411C1D8692DD0010D550 /* MLPAutoCompleteTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FF41101D8692DD0010D550 /* MLPAutoCompleteTextField.m */; };
+		A6FF411D1D8692DD0010D550 /* NSString+Levenshtein.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FF41151D8692DD0010D550 /* NSString+Levenshtein.m */; };
+		A6FF411E1D8692DD0010D550 /* MVPlaceSearchTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FF41171D8692DD0010D550 /* MVPlaceSearchTextField.m */; };
+		A6FF411F1D8692DD0010D550 /* PlaceDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FF41191D8692DD0010D550 /* PlaceDetail.m */; };
+		A6FF41201D8692DD0010D550 /* PlaceObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A6FF411B1D8692DD0010D550 /* PlaceObject.m */; };
+		A6FF8C8D1D82FCA8003DA960 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FF8C8C1D82FCA8003DA960 /* SystemConfiguration.framework */; };
+		A6FF8C8F1D82FCAE003DA960 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FF8C8E1D82FCAE003DA960 /* QuartzCore.framework */; };
+		A6FF8C911D82FCB4003DA960 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FF8C901D82FCB4003DA960 /* OpenGLES.framework */; };
+		A6FF8C931D82FCC0003DA960 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FF8C921D82FCC0003DA960 /* ImageIO.framework */; };
+		A6FF8C951D82FCC6003DA960 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FF8C941D82FCC6003DA960 /* GLKit.framework */; };
+		A6FF8C971D82FCD5003DA960 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FF8C961D82FCD5003DA960 /* CoreLocation.framework */; };
+		A6FF8C991D82FCF4003DA960 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6FF8C981D82FCF4003DA960 /* AVFoundation.framework */; };
+		AE702DE595A49CD47A2E1A55 /* Pods_valetu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 279721635039F2232948E0DA /* Pods_valetu.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,12 +57,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		279721635039F2232948E0DA /* Pods_valetu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_valetu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CF07D67ECCD6DC25EB0298F /* Pods-valetu.distribution.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-valetu.distribution.xcconfig"; path = "Pods/Target Support Files/Pods-valetu/Pods-valetu.distribution.xcconfig"; sourceTree = "<group>"; };
 		A61371E11D7DBCBA00A956E8 /* valetu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = valetu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A61371E51D7DBCBA00A956E8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A61371E71D7DBCBA00A956E8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		A61371E81D7DBCBA00A956E8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A61371EA1D7DBCBA00A956E8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A61371EB1D7DBCBA00A956E8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A61371EE1D7DBCBA00A956E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A61371F01D7DBCBA00A956E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A61371F31D7DBCBA00A956E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +71,51 @@
 		A61372051D7DBCBA00A956E8 /* valetuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = valetuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A61372091D7DBCBA00A956E8 /* valetuUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = valetuUITests.m; sourceTree = "<group>"; };
 		A613720B1D7DBCBA00A956E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A64799691D81E66D00A1D1A8 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A647996A1D81E66D00A1D1A8 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A647996D1D81E66D00A1D1A8 /* UBSDKLocalization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UBSDKLocalization.h; sourceTree = "<group>"; };
+		A647996E1D81E66D00A1D1A8 /* UBSDKUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UBSDKUtility.h; sourceTree = "<group>"; };
+		A647996F1D81E66D00A1D1A8 /* UBSDKUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UBSDKUtility.m; sourceTree = "<group>"; };
+		A64799701D81E66D00A1D1A8 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A64799711D81E66D00A1D1A8 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A64799771D81E72A00A1D1A8 /* UBSDKExampleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UBSDKExampleTableViewCell.h; sourceTree = "<group>"; };
+		A64799781D81E72A00A1D1A8 /* UBSDKExampleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UBSDKExampleTableViewCell.m; sourceTree = "<group>"; };
+		A647997B1D81E7CE00A1D1A8 /* UBSDKLoginButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UBSDKLoginButtonView.h; sourceTree = "<group>"; };
+		A647997C1D81E7CE00A1D1A8 /* UBSDKLoginButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UBSDKLoginButtonView.m; sourceTree = "<group>"; };
+		A64CF0C01D81F80E00E465B4 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		A64CF0C21D81F99F00E465B4 /* AppDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDefine.h; sourceTree = "<group>"; };
+		A64CF0DA1D82040700E465B4 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		A64CF0DB1D82040700E465B4 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		A67235241D8231780014E844 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		A67235251D8231780014E844 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		A67235271D8265F80014E844 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		A67235281D8265F80014E844 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		A678A5FA1D843B8E00895FB4 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		A678A5FB1D843B8E00895FB4 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		A68F34AEA8AE36B03F541F8F /* Pods-valetu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-valetu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-valetu/Pods-valetu.debug.xcconfig"; sourceTree = "<group>"; };
+		A6FD77121D845E6700D892A7 /* storehouse.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = storehouse.plist; sourceTree = "<group>"; };
+		A6FD77141D84731F00D892A7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A6FF410F1D8692DD0010D550 /* MLPAutoCompleteTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLPAutoCompleteTextField.h; sourceTree = "<group>"; };
+		A6FF41101D8692DD0010D550 /* MLPAutoCompleteTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLPAutoCompleteTextField.m; sourceTree = "<group>"; };
+		A6FF41111D8692DD0010D550 /* MLPAutoCompleteTextFieldDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLPAutoCompleteTextFieldDataSource.h; sourceTree = "<group>"; };
+		A6FF41121D8692DD0010D550 /* MLPAutoCompleteTextFieldDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLPAutoCompleteTextFieldDelegate.h; sourceTree = "<group>"; };
+		A6FF41131D8692DD0010D550 /* MLPAutoCompletionObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLPAutoCompletionObject.h; sourceTree = "<group>"; };
+		A6FF41141D8692DD0010D550 /* NSString+Levenshtein.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Levenshtein.h"; sourceTree = "<group>"; };
+		A6FF41151D8692DD0010D550 /* NSString+Levenshtein.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Levenshtein.m"; sourceTree = "<group>"; };
+		A6FF41161D8692DD0010D550 /* MVPlaceSearchTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVPlaceSearchTextField.h; sourceTree = "<group>"; };
+		A6FF41171D8692DD0010D550 /* MVPlaceSearchTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVPlaceSearchTextField.m; sourceTree = "<group>"; };
+		A6FF41181D8692DD0010D550 /* PlaceDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceDetail.h; sourceTree = "<group>"; };
+		A6FF41191D8692DD0010D550 /* PlaceDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceDetail.m; sourceTree = "<group>"; };
+		A6FF411A1D8692DD0010D550 /* PlaceObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceObject.h; sourceTree = "<group>"; };
+		A6FF411B1D8692DD0010D550 /* PlaceObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceObject.m; sourceTree = "<group>"; };
+		A6FF8C8C1D82FCA8003DA960 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A6FF8C8E1D82FCAE003DA960 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A6FF8C901D82FCB4003DA960 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		A6FF8C921D82FCC0003DA960 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		A6FF8C941D82FCC6003DA960 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		A6FF8C961D82FCD5003DA960 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A6FF8C981D82FCF4003DA960 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E11F23D4CECD12AD75D9EA88 /* Pods-valetu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-valetu.release.xcconfig"; path = "Pods/Target Support Files/Pods-valetu/Pods-valetu.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +123,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6FF8C991D82FCF4003DA960 /* AVFoundation.framework in Frameworks */,
+				A6FF8C971D82FCD5003DA960 /* CoreLocation.framework in Frameworks */,
+				A6FF8C951D82FCC6003DA960 /* GLKit.framework in Frameworks */,
+				A6FF8C931D82FCC0003DA960 /* ImageIO.framework in Frameworks */,
+				A6FF8C911D82FCB4003DA960 /* OpenGLES.framework in Frameworks */,
+				A6FF8C8F1D82FCAE003DA960 /* QuartzCore.framework in Frameworks */,
+				A6FF8C8D1D82FCA8003DA960 /* SystemConfiguration.framework in Frameworks */,
+				AE702DE595A49CD47A2E1A55 /* Pods_valetu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +151,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		972B50CC686897C5628CF675 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A68F34AEA8AE36B03F541F8F /* Pods-valetu.debug.xcconfig */,
+				E11F23D4CECD12AD75D9EA88 /* Pods-valetu.release.xcconfig */,
+				8CF07D67ECCD6DC25EB0298F /* Pods-valetu.distribution.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A61371D81D7DBCBA00A956E8 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +168,8 @@
 				A61371FD1D7DBCBA00A956E8 /* valetuTests */,
 				A61372081D7DBCBA00A956E8 /* valetuUITests */,
 				A61371E21D7DBCBA00A956E8 /* Products */,
+				972B50CC686897C5628CF675 /* Pods */,
+				B71DA7D73EBB0360FC14AEA6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,14 +186,9 @@
 		A61371E31D7DBCBA00A956E8 /* valetu */ = {
 			isa = PBXGroup;
 			children = (
-				A61371E71D7DBCBA00A956E8 /* AppDelegate.h */,
-				A61371E81D7DBCBA00A956E8 /* AppDelegate.m */,
-				A61371EA1D7DBCBA00A956E8 /* ViewController.h */,
-				A61371EB1D7DBCBA00A956E8 /* ViewController.m */,
-				A61371ED1D7DBCBA00A956E8 /* Main.storyboard */,
-				A61371F01D7DBCBA00A956E8 /* Assets.xcassets */,
-				A61371F21D7DBCBA00A956E8 /* LaunchScreen.storyboard */,
-				A61371F51D7DBCBA00A956E8 /* Info.plist */,
+				A64799681D81E66D00A1D1A8 /* AppDelegate */,
+				A647996B1D81E66D00A1D1A8 /* Classes */,
+				A64799671D81E64600A1D1A8 /* Storyboard */,
 				A61371E41D7DBCBA00A956E8 /* Supporting Files */,
 			);
 			path = valetu;
@@ -117,7 +197,12 @@
 		A61371E41D7DBCBA00A956E8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A6FD77141D84731F00D892A7 /* Images.xcassets */,
+				A6FD77121D845E6700D892A7 /* storehouse.plist */,
+				A61371F01D7DBCBA00A956E8 /* Assets.xcassets */,
+				A61371F51D7DBCBA00A956E8 /* Info.plist */,
 				A61371E51D7DBCBA00A956E8 /* main.m */,
+				A64CF0C01D81F80E00E465B4 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -140,6 +225,109 @@
 			path = valetuUITests;
 			sourceTree = "<group>";
 		};
+		A64799671D81E64600A1D1A8 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				A61371ED1D7DBCBA00A956E8 /* Main.storyboard */,
+				A61371F21D7DBCBA00A956E8 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		A64799681D81E66D00A1D1A8 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				A64799691D81E66D00A1D1A8 /* AppDelegate.h */,
+				A647996A1D81E66D00A1D1A8 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		A647996B1D81E66D00A1D1A8 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A64CF0C11D81F99F00E465B4 /* AppDefine */,
+				A647996C1D81E66D00A1D1A8 /* Utility */,
+				A64799701D81E66D00A1D1A8 /* ViewController.h */,
+				A64799711D81E66D00A1D1A8 /* ViewController.m */,
+				A64CF0DA1D82040700E465B4 /* SearchViewController.h */,
+				A64CF0DB1D82040700E465B4 /* SearchViewController.m */,
+				A67235241D8231780014E844 /* MapViewController.h */,
+				A67235251D8231780014E844 /* MapViewController.m */,
+				A67235271D8265F80014E844 /* BaseViewController.h */,
+				A67235281D8265F80014E844 /* BaseViewController.m */,
+				A678A5FA1D843B8E00895FB4 /* ProfileViewController.h */,
+				A678A5FB1D843B8E00895FB4 /* ProfileViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A647996C1D81E66D00A1D1A8 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				A6FF410D1D8692DD0010D550 /* MVPlaceSearchTextField */,
+				A647997B1D81E7CE00A1D1A8 /* UBSDKLoginButtonView.h */,
+				A647997C1D81E7CE00A1D1A8 /* UBSDKLoginButtonView.m */,
+				A64799771D81E72A00A1D1A8 /* UBSDKExampleTableViewCell.h */,
+				A64799781D81E72A00A1D1A8 /* UBSDKExampleTableViewCell.m */,
+				A647996D1D81E66D00A1D1A8 /* UBSDKLocalization.h */,
+				A647996E1D81E66D00A1D1A8 /* UBSDKUtility.h */,
+				A647996F1D81E66D00A1D1A8 /* UBSDKUtility.m */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		A64CF0C11D81F99F00E465B4 /* AppDefine */ = {
+			isa = PBXGroup;
+			children = (
+				A64CF0C21D81F99F00E465B4 /* AppDefine.h */,
+			);
+			path = AppDefine;
+			sourceTree = "<group>";
+		};
+		A6FF410D1D8692DD0010D550 /* MVPlaceSearchTextField */ = {
+			isa = PBXGroup;
+			children = (
+				A6FF410E1D8692DD0010D550 /* MLPAutoCompleteTextField */,
+				A6FF41161D8692DD0010D550 /* MVPlaceSearchTextField.h */,
+				A6FF41171D8692DD0010D550 /* MVPlaceSearchTextField.m */,
+				A6FF41181D8692DD0010D550 /* PlaceDetail.h */,
+				A6FF41191D8692DD0010D550 /* PlaceDetail.m */,
+				A6FF411A1D8692DD0010D550 /* PlaceObject.h */,
+				A6FF411B1D8692DD0010D550 /* PlaceObject.m */,
+			);
+			path = MVPlaceSearchTextField;
+			sourceTree = "<group>";
+		};
+		A6FF410E1D8692DD0010D550 /* MLPAutoCompleteTextField */ = {
+			isa = PBXGroup;
+			children = (
+				A6FF410F1D8692DD0010D550 /* MLPAutoCompleteTextField.h */,
+				A6FF41101D8692DD0010D550 /* MLPAutoCompleteTextField.m */,
+				A6FF41111D8692DD0010D550 /* MLPAutoCompleteTextFieldDataSource.h */,
+				A6FF41121D8692DD0010D550 /* MLPAutoCompleteTextFieldDelegate.h */,
+				A6FF41131D8692DD0010D550 /* MLPAutoCompletionObject.h */,
+				A6FF41141D8692DD0010D550 /* NSString+Levenshtein.h */,
+				A6FF41151D8692DD0010D550 /* NSString+Levenshtein.m */,
+			);
+			path = MLPAutoCompleteTextField;
+			sourceTree = "<group>";
+		};
+		B71DA7D73EBB0360FC14AEA6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6FF8C981D82FCF4003DA960 /* AVFoundation.framework */,
+				A6FF8C961D82FCD5003DA960 /* CoreLocation.framework */,
+				A6FF8C941D82FCC6003DA960 /* GLKit.framework */,
+				A6FF8C921D82FCC0003DA960 /* ImageIO.framework */,
+				A6FF8C901D82FCB4003DA960 /* OpenGLES.framework */,
+				A6FF8C8E1D82FCAE003DA960 /* QuartzCore.framework */,
+				A6FF8C8C1D82FCA8003DA960 /* SystemConfiguration.framework */,
+				279721635039F2232948E0DA /* Pods_valetu.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +335,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A613720E1D7DBCBA00A956E8 /* Build configuration list for PBXNativeTarget "valetu" */;
 			buildPhases = (
+				A17D6484B476F809881836A0 /* [CP] Check Pods Manifest.lock */,
 				A61371DD1D7DBCBA00A956E8 /* Sources */,
 				A61371DE1D7DBCBA00A956E8 /* Frameworks */,
 				A61371DF1D7DBCBA00A956E8 /* Resources */,
+				A783E34B143B7C2439CB1EFA /* [CP] Embed Pods Frameworks */,
+				715B3B5C50037BCE5D7A437B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,6 +398,7 @@
 				TargetAttributes = {
 					A61371E01D7DBCBA00A956E8 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = K49GT2LB25;
 					};
 					A61371F91D7DBCBA00A956E8 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -244,8 +436,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A61371F41D7DBCBA00A956E8 /* LaunchScreen.storyboard in Resources */,
+				A6FD77151D84731F00D892A7 /* Images.xcassets in Resources */,
 				A61371F11D7DBCBA00A956E8 /* Assets.xcassets in Resources */,
 				A61371EF1D7DBCBA00A956E8 /* Main.storyboard in Resources */,
+				A6FD77131D845E6700D892A7 /* storehouse.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,14 +459,74 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		715B3B5C50037BCE5D7A437B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-valetu/Pods-valetu-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A17D6484B476F809881836A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A783E34B143B7C2439CB1EFA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-valetu/Pods-valetu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A61371DD1D7DBCBA00A956E8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A61371EC1D7DBCBA00A956E8 /* ViewController.m in Sources */,
-				A61371E91D7DBCBA00A956E8 /* AppDelegate.m in Sources */,
+				A67235291D8265F80014E844 /* BaseViewController.m in Sources */,
+				A647997D1D81E7CE00A1D1A8 /* UBSDKLoginButtonView.m in Sources */,
+				A678A5FC1D843B8E00895FB4 /* ProfileViewController.m in Sources */,
+				A67235261D8231780014E844 /* MapViewController.m in Sources */,
+				A6FF41201D8692DD0010D550 /* PlaceObject.m in Sources */,
+				A64799721D81E66D00A1D1A8 /* AppDelegate.m in Sources */,
+				A64CF0DC1D82040700E465B4 /* SearchViewController.m in Sources */,
+				A6FF411F1D8692DD0010D550 /* PlaceDetail.m in Sources */,
+				A6FF411E1D8692DD0010D550 /* MVPlaceSearchTextField.m in Sources */,
+				A6FF411D1D8692DD0010D550 /* NSString+Levenshtein.m in Sources */,
 				A61371E61D7DBCBA00A956E8 /* main.m in Sources */,
+				A64799741D81E66D00A1D1A8 /* ViewController.m in Sources */,
+				A6FF411C1D8692DD0010D550 /* MLPAutoCompleteTextField.m in Sources */,
+				A64799731D81E66D00A1D1A8 /* UBSDKUtility.m in Sources */,
+				A647997A1D81E72A00A1D1A8 /* UBSDKExampleTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,7 +599,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Greg Besoni (K49GT2LB25)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Greg Besoni (K49GT2LB25)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -367,6 +622,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "3d44a236-f45d-4c98-a071-04d1c8229667";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -390,7 +646,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Greg Besoni (K49GT2LB25)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Greg Besoni (K49GT2LB25)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -405,6 +662,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "3d44a236-f45d-4c98-a071-04d1c8229667";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -413,23 +671,35 @@
 		};
 		A613720F1D7DBCBA00A956E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A68F34AEA8AE36B03F541F8F /* Pods-valetu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = valetu/PrefixHeader.pch;
 				INFOPLIST_FILE = valetu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.valetu;
+				PRODUCT_BUNDLE_IDENTIFIER = com.valetu.parking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		A61372101D7DBCBA00A956E8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E11F23D4CECD12AD75D9EA88 /* Pods-valetu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = valetu/PrefixHeader.pch;
 				INFOPLIST_FILE = valetu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.valetu;
+				PRODUCT_BUNDLE_IDENTIFIER = com.valetu.parking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -479,6 +749,88 @@
 			};
 			name = Release;
 		};
+		A65C91171D8358A000B8EF8E /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Greg Besoni (K49GT2LB25)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Greg Besoni (K49GT2LB25)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "3d44a236-f45d-4c98-a071-04d1c8229667";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
+		A65C91181D8358A000B8EF8E /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CF07D67ECCD6DC25EB0298F /* Pods-valetu.distribution.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = valetu/PrefixHeader.pch;
+				INFOPLIST_FILE = valetu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.valetu.parking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Distribution;
+		};
+		A65C91191D8358A000B8EF8E /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = valetuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.valetuTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/valetu.app/valetu";
+			};
+			name = Distribution;
+		};
+		A65C911A1D8358A000B8EF8E /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = valetuUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.valetuUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = valetu;
+			};
+			name = Distribution;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -487,6 +839,7 @@
 			buildConfigurations = (
 				A613720C1D7DBCBA00A956E8 /* Debug */,
 				A613720D1D7DBCBA00A956E8 /* Release */,
+				A65C91171D8358A000B8EF8E /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -496,24 +849,30 @@
 			buildConfigurations = (
 				A613720F1D7DBCBA00A956E8 /* Debug */,
 				A61372101D7DBCBA00A956E8 /* Release */,
+				A65C91181D8358A000B8EF8E /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A61372111D7DBCBA00A956E8 /* Build configuration list for PBXNativeTarget "valetuTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A61372121D7DBCBA00A956E8 /* Debug */,
 				A61372131D7DBCBA00A956E8 /* Release */,
+				A65C91191D8358A000B8EF8E /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A61372141D7DBCBA00A956E8 /* Build configuration list for PBXNativeTarget "valetuUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A61372151D7DBCBA00A956E8 /* Debug */,
 				A61372161D7DBCBA00A956E8 /* Release */,
+				A65C911A1D8358A000B8EF8E /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
