@@ -10,15 +10,10 @@
 #import <UberRides/UberRides-Swift.h>
 @import GoogleMaps;
 
-@interface AppDelegate (){
-    
-}
-
+@interface AppDelegate ()
 @end
 
 @implementation AppDelegate
-@synthesize currentLocation;
-
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
    
@@ -29,9 +24,21 @@
     // If true, all requests will hit the sandbox, useful for testing
     [UBSDKConfiguration setSandboxEnabled:YES];
     // If true, Native login will try and fallback to using Authorization Code Grant login (for privileged scopes). Otherwise will redirect to App store
-    [UBSDKConfiguration setFallbackEnabled:NO];
+    [UBSDKConfiguration setFallbackEnabled:YES];
     
+    [Fabric with:@[[Crashlytics class]]];
+    
+    [self initVariables];
+    
+
     return YES;
+}
+
+
+
+- (void) initVariables
+{
+    [Parkinglot sharedModel].selectedLocationId = -1;
 }
 
 - (void) initGlobalVar
@@ -68,8 +75,7 @@
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
@@ -77,14 +83,52 @@
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
-    
+    [Parkinglot sharedModel].isBackgroundRunning = NO;
 }
 
-
-
-
 - (void)applicationWillTerminate:(UIApplication *)application {
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+
+}
+
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
+{
+    if (![Parkinglot sharedModel].isBackgroundRunning) {
+        UIAlertController * alert=   [UIAlertController
+                                      alertControllerWithTitle:NOTIFICATION_CATEGORY
+                                      message:[notification.userInfo objectForKey:@"message"]
+                                      preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction* Ok = [UIAlertAction
+                             actionWithTitle:OK_IDENTIFIRE
+                             style:UIAlertActionStyleDefault
+                             handler:^(UIAlertAction * action)
+                             {
+                             }];
+        UIAlertAction* notYet = [UIAlertAction
+                                 actionWithTitle:NOT_YET_IDENTIFIRE style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                                 }];
+        
+        UIAlertAction* rideRequest = [UIAlertAction actionWithTitle:Ride_Uber_IDENTIFIRE style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            [[NSNotificationCenter defaultCenter] postNotificationName:Ride_Uber_IDENTIFIRE object: nil];
+        }];
+        
+        if ([notification.alertAction isEqualToString:Ride_Uber_IDENTIFIRE]) {
+            [alert addAction:notYet];
+            [alert addAction:rideRequest];
+        } else {
+            [alert addAction:Ok];
+        }
+        
+        [[[[UIApplication sharedApplication] keyWindow] rootViewController] presentViewController:alert animated:YES completion:nil];
+    }
+}
+
+- (void)application:(UIApplication *)application handleActionWithIdentifier:(nullable NSString *)identifier forLocalNotification:(UILocalNotification *)notification completionHandler:(void(^)())completionHandler
+{
+    if ([identifier isEqualToString:Ride_Uber_IDENTIFIRE]) {
+        [[NSNotificationCenter defaultCenter] postNotificationName:Ride_Uber_IDENTIFIRE object: nil];
+    }
+    completionHandler();
 }
 
 @end

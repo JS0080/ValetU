@@ -24,8 +24,15 @@
 
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
+@import MapKit;
+@import Fabric;
+@import Crashlytics;
 @import GoogleMaps;
 @import GooglePlaces;
+#import "GMUMarkerClustering.h"
+#import "POIItem.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <STPopup/STPopup.h>
 
 #import "MVPlaceSearchTextField.h"
 
@@ -49,9 +56,14 @@
 
 #import "UIScrollView+EmptyDataSet.h"
 
+#import "HCSStarRatingView.h"
+
 // web service
 #import <AFNetworking/AFNetworking.h>
 #import <SWNetworking/SWNetworking.h>
 
 #import "AppDelegate/AppDelegate.h"
 #import "BaseViewController.h"
+#import "DetailViewController.h"
+
+#import "Parkinglot.h"

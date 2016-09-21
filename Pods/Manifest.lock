@@ -15,7 +15,10 @@ PODS:
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
   - CBStoreHouseRefreshControl (1.0)
+  - Crashlytics (3.8.1):
+    - Fabric (~> 1.6.3)
   - DZNEmptyDataSet (1.8.1)
+  - Fabric (1.6.8)
   - FontAwesomeKit (2.2.1):
     - FontAwesomeKit/Core (= 2.2.1)
     - FontAwesomeKit/FontAwesome (= 2.2.1)
@@ -47,11 +50,16 @@ PODS:
     - GooglePlaces (= 2.0.1)
   - GooglePlaces (2.0.1):
     - GoogleMaps/Base (= 2.0.1)
+  - HCSStarRatingView (1.4.5)
   - MBProgressHUD (1.0.0)
   - ObjectMapper (1.4.0)
   - ProgressHUD (2.3)
   - PureLayout (3.0.2)
   - RNGridMenu (0.1.3)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - STPopup (1.8.0)
   - SWNetworking (1.1):
     - SWNetworking/File (= 1.1)
     - SWNetworking/Reachability (= 1.1)
@@ -76,15 +84,20 @@ PODS:
 DEPENDENCIES:
   - AFNetworking
   - CBStoreHouseRefreshControl
+  - Crashlytics
   - DZNEmptyDataSet
+  - Fabric
   - FontAwesomeKit (from `https://github.com/PrideChung/FontAwesomeKit.git`)
   - GoogleMaps
   - GooglePlacePicker
   - GooglePlaces
+  - HCSStarRatingView (~> 1.4.5)
   - MBProgressHUD
   - ProgressHUD
   - PureLayout
   - RNGridMenu
+  - SDWebImage (~> 3.8)
+  - STPopup
   - SWNetworking
   - TPKeyboardAvoiding
   - UberRides
@@ -101,20 +114,25 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   CBStoreHouseRefreshControl: a814bd725e74ff4c1e8dd96eb02358199b0da04f
+  Crashlytics: 4391d8df0b125345e9f209c5db6e7f40a6a8435d
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  Fabric: 5755268d0171435ab167e3d0878a28a777deaf10
   FontAwesomeKit: 3614979b3dbb0ec3f7fac1bd760b91f66c31db67
   GoogleMaps: f09da64fc987c1aa29394567c3cab5a3df83c402
   GooglePlacePicker: e7b11b732e40dbe76e8ab4c5fc2f4a7c32b96578
   GooglePlaces: 72fab1d1651c6df0322f2aad245ffb15b80d3c56
+  HCSStarRatingView: bff3f89314d3b5013ce826ea11897d3129ff6b8c
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   ObjectMapper: a07ad0462c5adf014adc0f89ef04c29b626e855e
   ProgressHUD: 0d2afb77bc41997dfff1aafb8617317d858834a9
   PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
   RNGridMenu: c58db81f87b5473936bb1b675dc3e947c409b51d
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  STPopup: af630a85628e4226ffcbda5caaead0d99aed13a8
   SWNetworking: b96122db6316d247a18919b2f4b371add286f9a2
   TPKeyboardAvoiding: a5138f318c06fb3e151f886e18ce4a72695d9cbe
   UberRides: 31c962f5b150fac726789e4de80f5fd468201dd5
 
-PODFILE CHECKSUM: a6173eda59c2ec610b3bedc2a648f47c16ec3690
+PODFILE CHECKSUM: be9548cac1089f68a84949c4e62fcfc30ea39a6e
 
 COCOAPODS: 1.0.1

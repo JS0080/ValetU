@@ -65,9 +65,9 @@
         if(aQuery.length>0){
             GMSAutocompleteFilter *filter = [[GMSAutocompleteFilter alloc] init];
             filter.type = kGMSPlacesAutocompleteTypeFilterNoFilter;
+            filter.country = @"US";
         
             
-        
             [_placesClient autocompleteQuery:aQuery
                                       bounds:nil
                                       filter:filter
@@ -131,6 +131,17 @@
     if([_placeSearchDelegate respondsToSelector:@selector(placeSearchWillHideResult:)]){
         [_placeSearchDelegate placeSearchWillHideResult:self];
     }
+}
+
+
+// placeholder position
+- (CGRect)textRectForBounds:(CGRect)bounds {
+    return CGRectOffset(bounds, 20, 0);
+}
+
+// text position
+- (CGRect)editingRectForBounds:(CGRect)bounds {
+    return CGRectOffset(bounds, 20, 0);
 }
 
 

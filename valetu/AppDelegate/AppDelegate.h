@@ -12,10 +12,6 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic)  CLLocation* currentLocation;
-@property (strong, nonatomic)  NSArray *nearbyplaces;
-@property (strong, nonatomic)  NSString* currentAddress;
-
 @property (strong, nonatomic) UBSDKUserProfile *profile;
 @property (strong, nonatomic) NSMutableDictionary<NSString *, UBSDKPlace *> *places;
 @property (strong, nonatomic) NSArray<UBSDKUserActivity *> *history;

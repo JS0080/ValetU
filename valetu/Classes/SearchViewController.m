@@ -11,10 +11,9 @@
 @interface SearchViewController ()<CLLocationManagerDelegate, UITableViewDelegate, UITableViewDataSource, DZNEmptyDataSetSource, DZNEmptyDataSetDelegate>
 {
     CBStoreHouseRefreshControl* storeHouseRefreshControl;
+    NSArray* data;
 }
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property (weak, nonatomic) IBOutlet UILabel *currentLocationLabel;
-
 
 @end
 
@@ -28,7 +27,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-       [self initNavigation];
+    [self initNavigation];
     [self initTableView];
 }
 
@@ -41,20 +40,21 @@
 
 - (void) updateUI
 {
-    if([[self app].nearbyplaces count] == 0) {
-        [self fetchNearbyResult:[self app].currentLocation.coordinate withCompletion:^{
+    data = [Parkinglot sharedModel].nearbyplaces;
+    
+    if([data count] == 0) {
+        [self fetchNearbyResult:[Parkinglot sharedModel].dropoffLocation.coordinate withCompletion:^{
             [self.tableView reloadData];
-            self.currentLocationLabel.text = [self app].currentAddress;
         }];
     }
     else {
         [self.tableView reloadData];
-        self.currentLocationLabel.text = [self app].currentAddress;
     }
    
 }
 
 - (void) initTableView {
+    
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     
@@ -106,19 +106,43 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SearchCell" forIndexPath:indexPath];
-    
-
-    
+   
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"SearchCell"];
     }
     
     NSUInteger index = indexPath.row;
-    NSDictionary *place = [self app].nearbyplaces[index];
-    cell.textLabel.text = [place objectForKey:@"address"];
-    NSString* distance = [NSString stringWithFormat:@"%.2lfKm", [[place objectForKey:@"distance"] floatValue]];
-    cell.detailTextLabel.text = distance;
+    UIImageView *imageView = (UIImageView*)[cell viewWithTag:10];
+    UILabel *title = (UILabel*)[cell viewWithTag:11];
+    HCSStarRatingView  *starRatingView = (HCSStarRatingView *) [cell viewWithTag:12];
+    UILabel* starValueLabel = (UILabel*)[cell viewWithTag:13];
+    UILabel* subTitleLabel = (UILabel*)[cell viewWithTag:14];
     
+    NSArray* comments = [data[[Parkinglot sharedModel].selectedLocationId] objectForKey:@"comments"];
+    if([comments count] > 0)
+    {
+        [imageView sd_setImageWithURL:[NSURL URLWithString:[comments[0] objectForKey:@"photourl"]]
+                     placeholderImage:[UIImage imageNamed:@"warning.png"]];
+    } else
+    {
+        imageView.image = [UIImage imageNamed:@"warning.png"];
+    }
+    
+    title.text = [data[index] objectForKey:@"address"];
+    NSString* starValue = [data[index] objectForKey:@"star"];
+    starRatingView.value = [starValue doubleValue];
+    starValueLabel.text = starValue;
+    NSString* estimate = [data[index] objectForKey:@"estimate"];
+    subTitleLabel.text = estimate;
+    
+//    NSString* distance = [NSString stringWithFormat:@"%.2lfKm", [[data[index] objectForKey:@"distance"] floatValue] * 1.609344];
+//    
+//    int duration = [[[self app].nearbyplaces[index] objectForKey:@"duration"] intValue];
+//    NSUInteger m = (duration / 60) % 60;
+//    NSUInteger s = duration % 60;
+//    
+//    NSString *away = [NSString stringWithFormat:@"%02lu:%02lu", m, s];
+   
     return cell;
 }
 
@@ -135,7 +159,6 @@
 - (void)updateTable
 {
     [self.tableView reloadData];
-    self.currentLocationLabel.text = [self app].currentAddress;
     [refreshControl endRefreshing];
 }
 
@@ -147,7 +170,12 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
-    return [[self app].nearbyplaces count];
+    return [data count];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 100;
 }
 
 #pragma mark - DZNEmptyDatasource

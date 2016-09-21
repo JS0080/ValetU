@@ -24,6 +24,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>HCSStarRatingView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MBProgressHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -54,6 +59,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>STPopup.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SWNetworking.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -72,7 +87,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>000F3DB4A763C08F31F1D303AFBE3E66</key>
+		<key>00BEE05F176FD68343B48144C849887D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -82,17 +97,37 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>20F054DC49B888ECEB75A47BFDA17445</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>2F7BF64F5AE82C8C64A99B1F1764E386</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>671E7383C8F188B0ED025BACC173EE83</key>
+		<key>48139759EE8775F73D14D6F53E7C37F9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6C0EA30971DEF2ACED2FB17431C76233</key>
+		<key>5AE00F93331213ED378518463FBB5BF9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>828DFA021D19BB8FC75EE26A9CAE0574</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>85C743DA190FF188779F8418DC3C0A37</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8CED2257A16F5216C7994DF1DD9B8C2E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -102,17 +137,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>99D2C4CA86F3A8FF24D8F84E363AA2AF</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A8E06A61B992AD4B6439D3A34EA0F340</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>B5367EDFB07CF137FD7C3FED3C5B0A12</key>
+		<key>A77F28DB0B8FE1B8D4FEEDE355EF5F61</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -122,7 +147,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CC7B568A01A1B2376440FD43A0D763C1</key>
+		<key>BC7035EC872344BE9EEB0AE81D1AE608</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CBC5FDF43B7E513CDC18876719F9D515</key>
 		<dict>
 			<key>primary</key>
 			<true/>

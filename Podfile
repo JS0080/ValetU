@@ -18,4 +18,10 @@ target ‘valetu’ do
 	pod 'UberRides'
 	pod "FontAwesomeKit", :git => 'https://github.com/PrideChung/FontAwesomeKit.git'
 	pod 'CBStoreHouseRefreshControl'
+	pod 'HCSStarRatingView', '~> 1.4.5'
+	pod 'SDWebImage', '~>3.8'
+	pod 'STPopup'
+	
+	pod 'Fabric'
+	pod 'Crashlytics'
 end

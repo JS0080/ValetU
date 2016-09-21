@@ -12,31 +12,78 @@
 #import "AppDelegate.h"
 
 @interface ViewController ()<UBSDKLoginButtonDelegate>
+{
+    UBSDKLoginManager *loginManager;
+}
 
-@property (nonatomic, readonly, nonnull) UBSDKRidesClient *ridesClient;
 @property (weak, nonatomic) UBSDKLoginButtonView *loginButtonView;
 
 @end
 
 @implementation ViewController
+@dynamic ridesClient;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-_ridesClient = [[UBSDKRidesClient alloc] init];
-   
-    NSArray<UBSDKRidesScope *> *requestedScopes = @[ UBSDKRidesScope.RideWidgets, UBSDKRidesScope.Profile, UBSDKRidesScope.Places, UBSDKRidesScope.History ];
-    
-    UBSDKLoginButtonView *loginButtonView = [[UBSDKLoginButtonView alloc] initWithFrame:self.view.frame
-                                                                                 scopes:requestedScopes
-                                                                              loginType:UBSDKLoginTypeImplicit];
-    loginButtonView.loginButton.delegate = self;
-    loginButtonView.loginButton.presentingViewController = self;
-    [self.view addSubview:loginButtonView];
+   loginManager = [[UBSDKLoginManager alloc] initWithLoginType:UBSDKLoginTypeNative];
     
     if ([UBSDKTokenManager fetchToken]) {
         self.loginButtonView.hidden = YES;
         [self gotoMapView];
+    }
+}
+
+- (IBAction)loginWithUber:(id)sender {
+    if ([[UIApplication sharedApplication]
+         canOpenURL:[NSURL URLWithString:@"uber://"]]) {
+        NSArray<UBSDKRidesScope *> *requestedScopes = @[ UBSDKRidesScope.Request, UBSDKRidesScope.Profile, UBSDKRidesScope.Places ];
+        
+        [loginManager loginWithRequestedScopes:requestedScopes presentingViewController:self completion:^(UBSDKAccessToken * _Nullable accessToken, NSError * _Nullable error) {
+            if (accessToken) {
+                [ProgressHUD show:CONFIRMING_LOGIN Interaction:NO];
+                
+                // Retrieves a user profile for the current logged in user
+                [self.ridesClient fetchUserProfile:^(UBSDKUserProfile * _Nullable profile, UBSDKResponse *response) {
+                    if (response.statusCode == 401) {
+                        [self resetAccessToken];
+                        [ProgressHUD showError:ERROR_LOGIN Interaction:NO];
+                    } else if (profile) {
+                        [self app].profile = profile;
+                        [Parkinglot sharedModel].UUID = profile.UUID;
+                        
+                        NSMutableDictionary *body = [NSMutableDictionary new];
+                        body[@"token"] = profile.UUID;
+                        body[@"name"] = [profile.firstName stringByAppendingString:profile.lastName];
+                        body[@"email"] = profile.email;
+                        
+                        SWGETRequest *getRequest = [[SWGETRequest alloc]init];
+                        getRequest.responseDataType = [SWResponseJSONDataType type];
+                        [getRequest startDataTaskWithURL:WS_LOGIN parameters:body success:^(NSURLSessionDataTask *uploadTask, id responseObject) {
+                            NSLog(@"%@", responseObject);
+                            NSString* status = [responseObject objectForKey:@"status"];
+                            if ([status isEqualToString:@"Ok"]) {
+                                [ProgressHUD dismiss];
+                                [self gotoMapView];
+                            } else {
+                                [self resetAccessToken];
+                                [ProgressHUD showError:ERROR_LOGIN Interaction:NO];
+                            }
+                        } failure:^(NSURLSessionTask *uploadTask, NSError *error) {
+                            NSLog(@"%@", error);
+                            [ProgressHUD showError:ERROR_LOGIN Interaction:NO];
+                        }];
+                    }
+                }];
+            } else {
+                [ProgressHUD showError:error.localizedDescription Interaction:NO];
+            }
+        }];
+        
+    } else {
+        // Waze is not installed. Launch AppStore to install Waze app
+        [[UIApplication sharedApplication] openURL:[NSURL
+                                                    URLWithString:@"https://itunes.apple.com/en/app/uber/id368677368?mt=8"]];
     }
 }
 
@@ -45,6 +92,17 @@ _ridesClient = [[UBSDKRidesClient alloc] init];
     
 }
 
+- (UIViewController*) topMostController {
+    UIViewController *topController = [UIApplication sharedApplication].keyWindow.rootViewController;
+    
+    while (topController.presentedViewController) {
+        topController = topController.presentedViewController;
+    }
+    
+    return topController;
+}
+
+
 - (void) gotoMapView {
     MapViewController *mapViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"MapView"];
    
@@ -52,10 +110,6 @@ _ridesClient = [[UBSDKRidesClient alloc] init];
     
     [self app].window.rootViewController = navigationController;
 }
-
-
-
-
 
 #pragma mark - UBSDKLoginButtonDelegate
 
@@ -74,10 +128,7 @@ _ridesClient = [[UBSDKRidesClient alloc] init];
 - (void)loginButton:(UBSDKLoginButton *)button didCompleteLoginWithToken:(UBSDKAccessToken *)accessToken error:(NSError *)error {
     if (accessToken) {	
         [ProgressHUD show:CONFIRMING_LOGIN Interaction:NO];
-        
-   //     [UBSDKTokenManager saveToken:accessToken];
-  
-        
+     
         // Retrieves a user profile for the current logged in user
         [self.ridesClient fetchUserProfile:^(UBSDKUserProfile * _Nullable profile, UBSDKResponse *response) {
             if (response.statusCode == 401) {
@@ -87,31 +138,28 @@ _ridesClient = [[UBSDKRidesClient alloc] init];
                 [self app].profile = profile;
                 
                 NSMutableDictionary *body = [NSMutableDictionary new];
-                body[@"access_token"] = accessToken.tokenString;
+                body[@"token"] = profile.UUID;
                 body[@"name"] = [profile.firstName stringByAppendingString:profile.lastName];
                 body[@"email"] = profile.email;
                 
-                NSString *url = [NSString stringWithFormat:@"%@?name=%@&email=%@&access_token=%@", WS_LOGIN, body[@"name"], body[@"email"], body[@"access_token"] ];
-                
                 SWGETRequest *getRequest = [[SWGETRequest alloc]init];
                 getRequest.responseDataType = [SWResponseJSONDataType type];
-                [getRequest startDataTaskWithURL:url parameters:nil success:^(NSURLSessionDataTask *uploadTask, id responseObject) {
+                [getRequest startDataTaskWithURL:WS_LOGIN parameters:body success:^(NSURLSessionDataTask *uploadTask, id responseObject) {
                     NSLog(@"%@", responseObject);
                     NSString* status = [responseObject objectForKey:@"status"];
-//                    if ([status isEqualToString:@"Ok"]) {
-//                       
-//                        [ProgressHUD dismiss];
-//                        [self gotoMapView];
-//                    } else {
-//                        [self resetAccessToken];
-//                        [ProgressHUD showError:ERROR_LOGIN Interaction:NO];
-//                    }
-                    [self gotoMapView];
+                    if ([status isEqualToString:@"Ok"]) {
+                       
+                        [ProgressHUD dismiss];
+                        [self gotoMapView];
+                    } else {
+                        [self resetAccessToken];
+                        [ProgressHUD showError:ERROR_LOGIN Interaction:NO];
+                    }
                 } failure:^(NSURLSessionTask *uploadTask, NSError *error) {
                     NSLog(@"%@", error);
                     [ProgressHUD showError:ERROR_LOGIN Interaction:NO];
                 }];
-}
+            }
         }];
         
         

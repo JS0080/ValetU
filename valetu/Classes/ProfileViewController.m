@@ -21,7 +21,6 @@ static NSString *const historyCellReuseIdentifier = @"HistoryCell";
 
 @interface ProfileViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableview;
-@property (nonatomic, readonly, nonnull) UBSDKRidesClient *ridesClient;
 
 @end
 
@@ -35,7 +34,6 @@ static NSString *const historyCellReuseIdentifier = @"HistoryCell";
     self.tableview.delegate = self;
     self.tableview.dataSource = self;
     
-    _ridesClient = [[UBSDKRidesClient alloc] init];
     [self loadUserData];
 
 }
