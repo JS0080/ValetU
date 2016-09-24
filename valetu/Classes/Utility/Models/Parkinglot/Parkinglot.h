@@ -29,6 +29,11 @@
 @property (nonatomic)   __block NSInteger userState;
 @property (nonatomic)  NSInteger starValue;
 @property (nonatomic) NSString* comment;
+@property ( nonatomic) NSMutableDictionary<NSString *, UBSDKPlace *> *places;
+@property ( nonatomic) NSArray<UBSDKUserActivity *> *history;
+@property (nonatomic) FBSDKProfile *profile;
+@property (nonatomic) NSString*  email;
+@property (nonatomic) FBSDKAccessToken *token;
 
 
 +(Parkinglot*)sharedModel;

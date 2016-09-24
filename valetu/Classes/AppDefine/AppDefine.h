@@ -47,6 +47,16 @@
 
 #define DISTANCE_MATRIX_ENDPOINT        @"https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&key=AIzaSyB03Qz_Mrj4hfhjSXJ2p0Mh_LxlOWCrp_M"
 
+#define GOOGLE_STREET_VIEW_API_KEY      @"AIzaSyCyoNYPcwFMtlEjfeKr-C_Yi3BYKN1VjgU"
+
+#define GOOGLE_STREET_VIEW_API_SMALL          @"https://maps.googleapis.com/maps/api/streetview?size=100x100&fov=90&heading=235&pitch=10&key=AIzaSyCyoNYPcwFMtlEjfeKr-C_Yi3BYKN1VjgU&location=%f,%f"
+
+#define GOOGLE_STREET_VIEW_API_BIG          @"https://maps.googleapis.com/maps/api/streetview?size=400x400&fov=90&heading=235&pitch=10&key=AIzaSyCyoNYPcwFMtlEjfeKr-C_Yi3BYKN1VjgU&location=%f,%f"
+
+
+// Mixpanel
+#define MIX_PANEL_TOKEN                   @"1c61b837e7fabb1d6732a26caa3177ba"
+
 // Google Map update timer interval
 #define MAP_UPDATE_INTERVAL             4
 
@@ -124,6 +134,8 @@ typedef NS_ENUM(NSInteger, ParkinglotUserState) {
 #define OK_IDENTIFIRE                @"Ok"
 #define NOTIFICATION_CATEGORY        @"ValetU"
 #define DEFAULT_CATEGORY             @"Default"
+
+static NSString * const kUserHasOnboardedKey = @"user_has_onboarded";
 
 
 #endif /* AppDefine_h */

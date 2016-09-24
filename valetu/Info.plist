@@ -40,6 +40,10 @@
 		<string>uber</string>
 		<string>waze</string>
         <string>comgooglemaps</string>
+        <string>fbapi</string>
+        <string>fb-messenger-api</string>
+        <string>fbauth2</string>
+        <string>fbshareextension</string>
 	</array>
     <key>UberServerToken</key>
     <string>VcR8_A-Xex3YhVGTUvjDWBQhDa3ygeBFHBXU73L7</string>
@@ -79,6 +83,10 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+    <key>FacebookAppID</key>
+    <string>630748387093262</string>
+    <key>FacebookDisplayName</key>
+    <string>ValetU</string>
     <key>CFBundleURLTypes</key>
     <array>
         <dict>
@@ -87,6 +95,7 @@
             <key>CFBundleURLSchemes</key>
             <array>
                 <string>valetu</string>
+                <string>fb630748387093262</string>
             </array>
         </dict>
     </array>

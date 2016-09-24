@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A77F28DB0B8FE1B8D4FEEDE355EF5F61"
+               BlueprintIdentifier = "2C4A8CBB2759137475C0DEECE6B168C0"
                BuildableName = "Pods_valetu.framework"
                BlueprintName = "Pods-valetu"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A77F28DB0B8FE1B8D4FEEDE355EF5F61"
+            BlueprintIdentifier = "2C4A8CBB2759137475C0DEECE6B168C0"
             BuildableName = "Pods_valetu.framework"
             BlueprintName = "Pods-valetu"
             ReferencedContainer = "container:Pods.xcodeproj">

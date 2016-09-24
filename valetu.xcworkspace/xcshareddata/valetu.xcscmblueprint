@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "358439691C201648720840628C6E645F37FD9D37",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "358439691C201648720840628C6E645F37FD9D37" : 0,
+    "14821FBA40F952FAB53112EC0953C606299E6BA8" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "BBB1618F-D0AB-492F-A13A-6C07A886FC85",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "358439691C201648720840628C6E645F37FD9D37" : "valetu\/",
+    "14821FBA40F952FAB53112EC0953C606299E6BA8" : "..\/Downloads\/MYBlurIntroductionView"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "valetu",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "valetu.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/MatthewYork\/MYBlurIntroductionView.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "14821FBA40F952FAB53112EC0953C606299E6BA8"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/JS0080\/ValetU.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "358439691C201648720840628C6E645F37FD9D37"
+    }
+  ]
+}

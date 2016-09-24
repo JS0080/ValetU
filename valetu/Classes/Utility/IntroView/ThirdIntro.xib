@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="eg0-dS-QVx" customClass="MYIntroductionPanel">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="545"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Uber ordered automatically" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="01x-0a-T4w">
+                    <rect key="frame" x="5" y="145" width="312" height="29"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="No need to enter in pickup and drop off locations we handle it for you." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zcb-b8-NeA">
+                    <rect key="frame" x="-90" y="363" width="501" height="38"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intro3.png" translatesAutoresizingMaskIntoConstraints="NO" id="QXx-bg-uRl">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="545"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="01x-0a-T4w" firstAttribute="top" secondItem="eg0-dS-QVx" secondAttribute="top" constant="145" id="0PT-N0-XPh"/>
+                <constraint firstAttribute="trailing" secondItem="QXx-bg-uRl" secondAttribute="trailing" id="I6c-du-aKg"/>
+                <constraint firstItem="QXx-bg-uRl" firstAttribute="leading" secondItem="eg0-dS-QVx" secondAttribute="leading" id="Kr4-1U-2Qx"/>
+                <constraint firstItem="zcb-b8-NeA" firstAttribute="leading" secondItem="eg0-dS-QVx" secondAttribute="leading" constant="39" id="TCA-b7-XgX"/>
+                <constraint firstAttribute="bottom" secondItem="zcb-b8-NeA" secondAttribute="bottom" constant="144" id="VJa-EJ-izx"/>
+                <constraint firstAttribute="trailing" secondItem="zcb-b8-NeA" secondAttribute="trailing" constant="39" id="oJy-cc-c6b"/>
+                <constraint firstAttribute="bottom" secondItem="QXx-bg-uRl" secondAttribute="bottom" id="tAn-6h-Ehj"/>
+                <constraint firstItem="zcb-b8-NeA" firstAttribute="centerX" secondItem="eg0-dS-QVx" secondAttribute="centerX" id="uav-1w-HzS"/>
+                <constraint firstItem="QXx-bg-uRl" firstAttribute="top" secondItem="eg0-dS-QVx" secondAttribute="top" id="wnr-lU-afy"/>
+                <constraint firstItem="01x-0a-T4w" firstAttribute="centerX" secondItem="eg0-dS-QVx" secondAttribute="centerX" id="ybp-fs-Ofa"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="296" y="345.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="intro3.png" width="360" height="640"/>
+    </resources>
+</document>

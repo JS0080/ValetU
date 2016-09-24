@@ -10,5 +10,9 @@
 
 @interface ReviewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UITextView *review;
+@property (weak, nonatomic) IBOutlet CircleImageView *userImageView;
+@property (weak, nonatomic) IBOutlet UILabel *userLabel;
+@property (weak, nonatomic) IBOutlet UILabel *updatedDate;
+@property (weak, nonatomic) IBOutlet UIButton *detailButton;
 
 @end
